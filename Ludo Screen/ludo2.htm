@@ -1,0 +1,266 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Ludo screen2</title>
+    <style>
+        table {
+            empty-cells: show;
+        }
+        
+        .redbox {
+            text-align: center;
+            background-color: #c73d3b;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .greenbox {
+            text-align: center;
+            background-color: #48b14f;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .bluebox {
+            text-align: center;
+            background-color: #535dca;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .yellowbox {
+            text-align: center;
+            background-color: #dce761;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .rm {
+            background-color: #d0312d;
+        }
+        
+        .gm {
+            background-color: #3cb043;
+        }
+        
+        .bm {
+            background-color: #3944bc;
+        }
+        
+        .ym {
+            background-color: #effd5f;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 3x3 table -->
+        <table border="1" rules=all height=100% width=100% align="centre">
+            <tr height=40%>
+                <th valign=top>
+                    <!-- red 4x4 table -->
+                    <table border="1" rules=all height=100% width=100% class="redbox">
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </th>
+                <th>
+                    <!-- green middle 6x3 table -->
+                    <table border="1" rules=all height=100% width=100%>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="gm"></th>
+                            <th class="gm"></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="gm"></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="gm"></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="gm"></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="gm"></th>
+                            <th></th>
+                        </tr>
+
+                    </table>
+                </th>
+                <th valign=top>
+                    <!-- 4x4 green table -->
+                    <table border="1" rules=all align="right" height=100% width=100% class="greenbox">
+                        <tr>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <tr height=20%>
+                <th>
+                    <!-- 3x6 red middle table -->
+                    <table border="1" rules=all height=100% width=100%>
+                        <tr>
+                            <th></th>
+                            <th class="rm"></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="rm"></th>
+                            <th class="rm"></th>
+                            <th class="rm"></th>
+                            <th class="rm"></th>
+                            <th class="rm"></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </table>
+                </th>
+                <th class="winner">
+                    <!-- winner table -->
+                    <table border="1" height=100% width=100% rules=all>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </th>
+                <th>
+                    <!-- 6x3 yellow middle table -->
+                    <table border="1" rules=all height=100% width=100%>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th class="ym"></th>
+                            <th class="ym"></th>
+                            <th class="ym"></th>
+                            <th class="ym"></th>
+                            <th class="ym"></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th class="ym"></th>
+                            <th></th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <tr hight=40%>
+                <th valign=bottom>
+                    <!-- 4x4 blue table  -->
+                    <table border="1" rules=all height=100% width=100% class="bluebox">
+                        <tr>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </th>
+                <th>
+                    <!-- 3x6 middle blue table  -->
+                    <table border="1" rules=all height=100% width=100%>
+                        <tr>
+                            <th></th>
+                            <th class="bm"></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="bm"></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="bm"></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="bm"></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th class="bm"></th>
+                            <th class="bm"></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+
+                    </table>
+                </th>
+                <th valign=bottom>
+                    <!-- 4x4 yellow table -->
+                    <table border="1" rules=all align="right" height=100% width=100% class="yellowbox">
+                        <tr>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
